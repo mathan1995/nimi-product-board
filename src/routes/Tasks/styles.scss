@@ -1,0 +1,11 @@
+.stacks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem;
+
+
+  @media only screen and (max-width: 1150px) {
+    flex-direction: column;
+  }
+}

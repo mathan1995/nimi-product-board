@@ -1,0 +1,84 @@
+@import "./vars";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=DM+Sans:wght@400;500&family=Inter:wght@300;400;700&family=Poppins:wght@200;300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: $grayBg;
+  color: $dark;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.link-button {
+  padding: 1rem 2.5rem;
+  font-size: 18px;
+  border-radius: 4px;
+  display: inline-block;
+
+  background-color: $dark;
+  color: $white;
+  text-transform: uppercase;
+  transition-duration: 200ms;
+
+  &:hover {
+    font-weight: bold;
+    background-color: $primaryColorDarker;
+    text-decoration: underline;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 25px;
+  color: $primaryColor;
+}
+
+.action-button {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  max-width: 150px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: $primaryColor;
+
+  transition-duration: 200ms;
+  &:hover {
+    font-weight: bold;
+    background-color: $primaryColorLight;
+  }
+}
+
+.error-message {
+  font-size: 12px;
+  color: $red;
+  font-weight: bold;
+}

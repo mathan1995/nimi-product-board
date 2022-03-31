@@ -1,0 +1,41 @@
+@import "../../styles/vars";
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 10px #70707030;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: grab;
+  border-bottom: 0.4px solid $primaryColor;
+  border-radius: 4px;
+  background-color: $whiteBackground;
+
+  h3 {
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  &:hover {
+    .delete-task {
+      display: block;
+    }
+  }
+
+  .delete-task {
+    padding: 0.5rem;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    svg {
+      fill: $red;
+    }
+  }
+}
